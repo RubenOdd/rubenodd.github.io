@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo web-page</title>
+        <meta charset="UTF-8"> <!--Muistaa laittaa UTF-8 kaikkiin koodin-->
+    </head>
+
+    <body>
+        <!--Otsikkot-->
+        <h1>Ensimäinen otsikko</h1>
+        <h2>Se on toinen otsikko</h2>
+        <h6>Pienin otsikko</h6>
+
+        <!--Normaalia tekstia-->
+        <p>This is normal text. Tag 'p' stands for 'paragraph'</p>
+        <p>Toinen kappale jättää selvän välin edelliseen, <br>
+        rivinvaihdon voi tehdä tägillä br, tulee sanasta break</p>
+        
+        <!--Listojen tekeminen-->
+        <h2>Listat</h2>
+        <!--piste lista-->
+        <h3>Tavallinen lista</h3>
+        <p>Tavallisem listan tag on ul</p>
+        <ul>
+            <li>Ensimmäinen elementti, tag on li</li>
+            <li>Toinen elementti</li>
+        </ul>
+
+        <!--numeroitu lista-->
+        <h3>Numeroitu lista</h3>
+        <p>Numeroiden listan tag on ol</p>
+        <ol>
+            <li>Eka elementti</li>
+            <li>Toka elementti</li>
+        </ol>
+        
+        <!--Linkki asia-->
+        <h2>Linkkejä</h2>
+        <h3>Ulkoiset sivut</h3>
+        <p>Käytä koko URL</p>
+        <p>Linkku alkaa tagilla a (anchor), href (reference) kertoo, mihin linkki vie. Tagien väliin tulee se teksti, minkä lukija näkee. Jos haluat avata sivu toiselle välilehdelle , lisää target-atribuutti ja anna sen arvioksi _blank.</p>
+        <ul> <!--Linkkin structure-->
+            <li><a href="http://www.youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+
+        <h3>Linkki omille sivuille</h3> <!--Ohjeet-->
+        <p>Linkit suhteellisina viittauksina.</p>
+        <p>Jos sivu on samssa kansiossa, voit kiitata siihen suoraan sen nimellä, esim. a href = "sivu2.html"</p>
+        <p>Jos sivu on ali kansiossa, viitataan polulla alikansioon, esim a href ="./alikansio/sivu2.html"</p>
+        <p>Jos sivu on rinnakaisessa kansiossa, polkuun tulee alkuun viitaus ylöspäin, esim. a htef = "../sivukansio/sivu3.html</p>
+
+        <h3>Kuvat</h3> <!--Kuvien laittaminen-->
+        <p>Kuvat lisätään tagilla img. Pakollinen attributti on alt (alternative),  johon kirjoitetaan vaihtoehto, jos kuba ei toimi. Toinen pakollinen on src (source), josa kerrotaan mistä kuva löytyy.</p>
+        <p><img src="./kuvat/otus.jpg" alt="otus"></p>
+    </body>
+</html>
