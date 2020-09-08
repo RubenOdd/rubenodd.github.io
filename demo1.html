@@ -3,6 +3,7 @@
     <head>
         <title>Demo web-page</title>
         <meta charset="UTF-8"> <!--Muistaa laittaa UTF-8 kaikkiin koodin-->
+        <link rel="stylesheet" type="text/css" href="./css/demo1.css">
     </head>
 
     <body>
@@ -37,7 +38,7 @@
         <!--Linkki asia-->
         <h2>Linkkejä</h2>
         <h3>Ulkoiset sivut</h3>
-        <p>Käytä koko URL</p>
+        <p id="tarkein">Käytä koko URL</p>
         <p>Linkku alkaa tagilla a (anchor), href (reference) kertoo, mihin linkki vie. Tagien väliin tulee se teksti, minkä lukija näkee. Jos haluat avata sivu toiselle välilehdelle , lisää target-atribuutti ja anna sen arvioksi _blank.</p>
         <ul> <!--Linkkin structure-->
             <li><a href="http://www.youtube.com" target="_blank">YouTube</a></li>
@@ -50,7 +51,7 @@
         <p>Jos sivu on rinnakaisessa kansiossa, polkuun tulee alkuun viitaus ylöspäin, esim. a htef = "../sivukansio/sivu3.html</p>
 
         <h3>Kuvat</h3> <!--Kuvien laittaminen-->
-        <p>Kuvat lisätään tagilla img. Pakollinen attributti on alt (alternative),  johon kirjoitetaan vaihtoehto, jos kuba ei toimi. Toinen pakollinen on src (source), josa kerrotaan mistä kuva löytyy.</p>
+        <p class="kuvateksti">Kuvat lisätään tagilla img. Pakollinen attributti on alt (alternative),  johon kirjoitetaan vaihtoehto, jos kuba ei toimi. Toinen pakollinen on src (source), josa kerrotaan mistä kuva löytyy.</p>
         <p><img src="./kuvat/otus.jpg" alt="otus"></p>
     </body>
 </html>
