@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lomake, Demo 6</title>
+        <meta charset="UTF-8"> <!--Muistaa laittaa UTF-8 kaikkiin koodin-->
+        
+    </head>
+
+    <body>
+        <h1>Lomake</h1>
+
+        <form action="http://www.leeniemi.net/julkiset19/luelomake.php" method="post">
+        
+            Etunimi<br>
+            <input type="text" name="enimi" id="enimi"><br>
+
+            Sukunimi <br>
+            <input type="text" name="snimi" id="snimi"><br>
+            <br>
+
+            Äidinkieli <br>
+            <input type="radio" name="kieli" value="suomi">suomi<br>
+            <input type="radio" name="kieli" value="ruotsi">ruotsi<br>
+            <input type="radio" name="kieli" value="venaja">venäjä<br>
+            <br>
+
+            Muu kielitaito<br>
+            <input type="checkbox" name="suomi">suomi<br>
+            <input type="checkbox" name="ruotsi">ruotsi<br>
+            <input type="checkbox" name="saksa">saksa<br>
+            <input type="checkbox" name="venaja">venäjä<br>
+            <input type="checkbox" name="english">english<br>
+            <br>
+
+            Syntymävuosi<br>
+            <select name="vuosi">
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="1998">2001</option>
+                <option value="1998">2002</option>
+                <option value="1998">2003</option>
+                <option value="1998">2004</option>
+                <option value="1998">2005</option>
+            </select>
+            <br>
+
+            <textarea name="vapaa">
+
+            </textarea>
+            <br>
+
+            Lempiväri<br>
+            <input type="color">
+            <br>
+            
+            Email
+            <input type="text" required>
+
+            Salasana<br>
+            <input type="password" name="password">
+
+            Päivä<br>
+            <input type="date">
+
+            <input type="reset" value="Tyhjennä lomake">
+            <input type="submit" value="Lähetä tiedosto">
+
+
+        </form>
+
+
+    </body>
+</html>
