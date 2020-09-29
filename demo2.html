@@ -12,16 +12,17 @@
 <body>
 
     <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+    <header>
+        <ul class="navi">
+            <li class="navi"><a href="#kalatori">Kalatori</li></a>
+            <li class="navi"><a href="#markinnat">Markkinat</li></a>
+            <li class="navi"><a href="#hinnasto">Hinnasto</li></a>
+            <li class="navi"><a href="#yhteys">Ota yhteyttä</li></a>
+            <li class="navi"><a href="#sijainti">Sijainti</li></a>
+        </ul>
+    </header>
 
-    <ul>
-        <li><a href="#kalatori">Kalatori</li></a>
-        <li><a href="#markinnat">Markkinat</li></a>
-        <li><a href="#hinnasto">Hinnasto</li></a>
-        <li><a href="#yhteys">Ota yhteyttä</li></a>
-        <li><a href="#sijainti">Sijainti</li></a>
-    </ul>
 
-    
 
     <section id="kalatori">
     <a name="kalatori"><h1>Kalatori</h1></a>
@@ -45,99 +46,111 @@
         <li>Joulumarkkinat tiistai 15.12. klo 7–15</li>
     </ul>
 
-    <img src="./kuvat/mustekala.jpg" alt="mustekala">
-    <img src="./kuvat/rapu.jpg" alt="rapu">
-    <img src="./kuvat/pienikala.jpg" alt="pieni kala">
+    <div id="kuvat">
+    <img src="./kuvat/mustekala.jpg" alt="mustekala" class="round">
+    <img src="./kuvat/rapu.jpg" alt="rapu" class="round">
+    <img src="./kuvat/pienikala.jpg" alt="pieni kala" class="round">
+    </div>
+
     </section>
 
     <section id="hinnasto">
-    <a name="hinnasto"><h3>Hinnasto</h3></a> <!--Taulukko-->
+        <a name="hinnasto"><h3>Hinnasto</h3></a> <!--Taulukko-->
+        <div id="hintaalue">
+            
 
-    <img src="./kuvat/tori.jpg" alt="Kala kuva">
-    Paikkakartta
+            <div id="paikkakarta">
+                <p>
+                    <img src="./kuvat/tori.jpg" alt="Kala kuva"><br>
+                    Paikkakartta
+                </p>
+            </div>
 
-    <table>
-        <tr> <!--OtsikkoRIVI-->
-            <th>Tunnus</th>
-            <th>Ala m&sup2;</th>
-            <th>Hinta&frasl;vrk &euro;</th>
-        </tr>
-        <tr> <!--Table data-->
-            <td><strong>A1</strong></td>
-            <td>15</td>
-            <td>60</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>A2</td>
-            <td>15</td>
-            <td>60</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>A3</td>
-            <td>15</td>
-            <td>60</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>A4</td>
-            <td>15</td>
-            <td>60</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>A5</td>
-            <td>15</td>
-            <td>60</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td><strong>B1</strong></td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B2</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B3</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B4</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B5</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B6</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B7</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B8</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B9</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-        <tr> <!--Table data-->
-            <td>B10</td>
-            <td>8</td>
-            <td>40</td>
-        </tr>
-    </table>
+            <div id="hintataulukko">
+            <table>
+                <tr> <!--OtsikkoRIVI-->
+                    <th>Tunnus</th>
+                    <th>Ala m&sup2;</th>
+                    <th>Hinta&frasl;vrk &euro;</th>
+                </tr>
+                <tr> <!--Table data-->
+                    <td><strong>A1</strong></td>
+                    <td>15</td>
+                    <td>60</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>A2</td>
+                    <td>15</td>
+                    <td>60</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>A3</td>
+                    <td>15</td>
+                    <td>60</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>A4</td>
+                    <td>15</td>
+                    <td>60</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>A5</td>
+                    <td>15</td>
+                    <td>60</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td><strong>B1</strong></td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B2</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B3</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B4</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B5</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B6</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B7</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B8</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B9</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+                <tr> <!--Table data-->
+                    <td>B10</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr>
+            </table>
+            </div>
+        </div>
     </section>
 
     <section id="yhteys">

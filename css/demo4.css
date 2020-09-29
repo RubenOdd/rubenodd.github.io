@@ -6,10 +6,58 @@ h1 {
 html,body {
     height: 100%;
     margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 1.1em;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+}
+
+ul.navi {
+    width: fit-content;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 57, 139);
+    height: 60px;
+}
+
+li.navi {
+    float: left;
+}
+
+li.navi a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navi a:hover:not(.active) {
+    background-color: rgba(236, 220, 130, 0.692);
+}
+
+.active {
+    background-color:#4CAF50;
 }
 
 section {
     height: 100vh;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+img.round {
+    border-radius: 50%;
 }
 
 #kalatori {
@@ -35,6 +83,7 @@ section {
 
 #jemdude {
     font-style: italic;
+    font-size: 0.6em;
 }
 
 #top {
@@ -55,4 +104,25 @@ section {
 
 #top:hover {
     background-color: #555
+}
+
+#kuvat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#paikkakarta {
+    width: 45%;
+    float: left
+}
+
+#hintaalue {
+    display: flex;
+    justify-content: center;
+}
+
+#hintataulukko {
+    width: 45%;
+    float: left;
 }
