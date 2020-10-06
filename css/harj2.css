@@ -1,0 +1,62 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 3em;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h2 {
+    font-family: 'Sansita Swashed', cursive;
+    padding: 5px;
+}
+
+li {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+section {
+    height: 60vh;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+address {
+    font-size: 0.5em;
+    text-align: right;
+}
+
+.viikon_päivät {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.5em;
+}
+
+#hakee {
+    width: 250px;
+    height: 90px;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#ka_tiedot {
+    font-size: 0.8em;
+    font-family: 'Amiri', serif;
+    font-style: italic;
+}
+
+#tablystyle {
+    background-color: beige;
+    width: 300px;
+    border: 1px solid lightblue;
+    padding: 10px;
+}
