@@ -1,17 +1,20 @@
+/*Taggit*/
 body {
     background-color: bisque;
 }
 
 h1 {
     font-family: 'Sansita Swashed', cursive;
-    font-size: 3em;
+    font-size: 3.5em;
+    margin: 10px;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(227, 241, 253);
 }
 
 h2 {
     font-family: 'Sansita Swashed', cursive;
     padding: 5px;
+    font-size: 2.5em;
 }
 
 li {
@@ -20,10 +23,10 @@ li {
 
 section {
     height: 60vh;
-    padding-top: 15px;
+    padding-top: 50px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 address {
@@ -31,13 +34,22 @@ address {
     text-align: right;
 }
 
+/*CLASS muutto*/
 .viikon_päivät {
     font-family: 'Sansita Swashed', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
+
 }
 
+/*ID muuttaminen*/
+#maanantai {
+    background-image: url('../kuvat/bakery.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+
 #hakee {
-    width: 300px;
     height: 110px;
     padding: 8px;
     border: 1px solid gray;
@@ -49,6 +61,7 @@ address {
 }
 
 #ka_tiedot {
+    width: 100%;
     font-size: 1em;
     font-family: 'Amiri', serif;
     font-style: italic;
@@ -60,4 +73,72 @@ address {
     width: 300px;
     border: 1px solid lightblue;
     padding: 10px;
+}
+
+#sufferUnderHeader {
+    padding: 25px;
+}
+
+/*Navigation style*/
+ul.navi {
+    width: fit-content;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 57, 139);
+    height: 100%;
+}
+
+li.navi {
+    float: left;
+    font-size: 20px;
+}
+
+li.navi a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navi a:hover:not(.active) {
+    background-color: rgba(236, 158, 41, 0.692);
+}
+
+
+/*drop down content*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    position: fixed;
+}
+
+.dropdown-content {
+    display: none;
+    position: center;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*flex*/
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container > div #hakee {
+    position: absolute;
+}
+
+.flex-container > div #tiedotMe {
+    position: absolute;
+    font-size: 14px;
+    padding-left: 1000px;
 }

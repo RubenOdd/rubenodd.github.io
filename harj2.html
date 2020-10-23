@@ -12,22 +12,27 @@
 
 <body>
     <div id="container">
-        <header>
-        <h1>Ravintola Oula</h1>
-        <ul class="navi">
-            <li class="navi"><a href="#kalatori">Kalatori</li></a>
-            <li class="navi"><a href="#markinnat">Markkinat</li></a>
-            <li class="navi"><a href="#hinnasto">Hinnasto</li></a>
-            <li class="navi"><a href="#yhteys">Ota yhteyttä</li></a>
-            <li class="navi"><a href="#sijainti">Sijainti</li></a>
-        </ul>
-        </header>
-        
+        <div class="dropdown">
+            <header>
+            <span><h1>Ravintola Oula</h1></span>
+            <div class="dropdown-content">
+                <ul class="navi">
+                    <li class="navi"><a href="#maanantai">Maanantai</li></a>
+                    <li class="navi"><a href="#tiistai">Tiistai</li></a>
+                    <li class="navi"><a href="#keskiviikko">Keskiviikko</li></a>
+                    <li class="navi"><a href="#torstai">Torstai</li></a>
+                    <li class="navi"><a href="#perjantai">Perjantai</li></a>
+                </ul>
+            </div>
+            </header>
+        </div>
+
         <br>
         
-        <h2>Lounaslista</h2>
+        
 
-        <section>
+        <section id="maanantai">
+        <h2 id="sufferUnderHeader">Lounaslista</h2> <br>
         <h3 class="viikon_päivät">Maanantai</h3>
         <img src="./kuvat/vihanneskeittoa.jpg" alt="vihanneskeitto"> <a href="https://viinimaa.fi/reseptit/keitot/ribollita-firenzelainen-vihanneskeitto">Kuvan osoite</a> 
         <ul>
@@ -37,7 +42,7 @@
         </ul>
         </section>
 
-        <section>
+        <section id="tiistai">
         <h3 class="viikon_päivät">Tiistai</h3>
         <img src="./kuvat/kanasalatt.jpg" alt="Kana-fetajustosalaattia"> <a href="rosaviinijaruoka.fi/resepti/grillattua-kanaa-vesimeloni-fetajuustosalaatti/">Kuvan osoite</a>
         <ul>
@@ -47,7 +52,7 @@
         </ul>
         </section>
 
-        <section>
+        <section id="keskiviikko">
         <h3 class="viikon_päivät">Keskiviikko</h3>
         <img src="./kuvat/tomato.jpg" alt="Tomaatti-yrttikeittoa"> <a href="https://herrasmiehistelya.wordpress.com/2011/08/11/lapin-kulta-solar-kitchen/">Kuvan osoite</a>
         <ul>
@@ -57,7 +62,7 @@
         </ul>
         </section>
 
-        <section>
+        <section id="torstai">
         <h3 class="viikon_päivät">Torstai</h3>
         <img src="./kuvat/katakara.jpg" alt="Rapukeittoa"> <a href="https://iform.dk/sunde-opskrifter/aftensmad/thaisuppe-med-rejer-og-shiitakesvampe">Kuvan osoite</a>
         <ul>
@@ -67,7 +72,7 @@
         </ul>
         </section>
 
-        <section>
+        <section id="perjantai">
         <h3 class="viikon_päivät">Perjantai</h3>
         <img src="./kuvat/savukalasalaatti.jpg" alt="Savulohisalaatti"> <a href="https://www.kulinaari.com/2014/11/savulohisalaatti.html">Kuvan osoite</a>
         <ul>
@@ -107,28 +112,30 @@
         </div>
 
         <br>
+        <div class="flex-container">
+            <div id="hakee">
+            <form id="ka_tiedot">
+                Asiakkaan tiedot: <br>
+                Nimi: <input type="text" name="nimi" value="" id="käyttäjän_nimi">
+                <br>
+                Puhelin: <input type="tel" name="puhelin" value="" id="käyttäjän_puhelin">
+                <br>
+                Sähköposti: <input type="email" name="sähköposti" id="käyttjän_email">
+            </form>
+            </div>
 
-        <div id="hakee">
-        <form id="ka_tiedot">
-            Asiakkaan tiedot: <br>
-            Nimi: <input type="text" name="nimi" value="" id="käyttäjän_nimi">
-            <br>
-            Puhelin: <input type="tel" name="puhelin" value="" id="käyttäjän_puhelin">
-            <br>
-            Sähköposti: <input type="email" name="sähköposti" id="käyttjän_email">
-        </form>
+            <div class="tiedotMe">
+            <address id="tiedotMe">
+                    Ravintola Oula<br>
+                    Hallituskatu 12 <br>
+                    96200 ROVANIEMI <br>
+                    
+                    Puh. (016) 555 4755 <br>
+                    Fax (016) 555 4756 <br>
+                    E-Mail: ravintola.oula@oulanet.fi <br>
+            </address>
+            </div>
         </div>
-
-        <br>
-        <address >
-                Ravintola Oula<br>
-                Hallituskatu 12 <br>
-                96200 ROVANIEMI <br>
-                
-                Puh. (016) 555 4755 <br>
-                Fax (016) 555 4756 <br>
-                E-Mail: ravintola.oula@oulanet.fi <br>
-        </address>
     </div>
 </body>
 
