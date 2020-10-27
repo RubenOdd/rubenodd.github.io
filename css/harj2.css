@@ -9,6 +9,7 @@ h1 {
     margin: 10px;
     text-align: center;
     background-color: rgb(227, 241, 253);
+    background-image: url("../kuvat/bakery.png");
 }
 
 h2 {
@@ -38,16 +39,10 @@ address {
 .viikon_päivät {
     font-family: 'Sansita Swashed', cursive;
     font-size: 2em;
-
+    background-color: bisque;
 }
 
 /*ID muuttaminen*/
-#maanantai {
-    background-image: url('../kuvat/bakery.png');
-    background-size: 150%;
-    background-repeat: no-repeat;
-}
-
 
 #hakee {
     height: 110px;
