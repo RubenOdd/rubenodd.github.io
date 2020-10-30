@@ -4,12 +4,14 @@ body {
 }
 
 h1 {
+    color: aliceblue;
     font-family: 'Sansita Swashed', cursive;
     font-size: 3.5em;
     margin: 10px;
     text-align: center;
     background-color: rgb(227, 241, 253);
     background-image: url("../kuvat/bakery.png");
+    background-position: 30px;
 }
 
 h2 {
