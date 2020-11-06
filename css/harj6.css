@@ -54,6 +54,10 @@ main {
         grid-column-start: left;
         grid-column-end: right;
     }
+
+    div #kuva1{
+        display: none;
+    }
 }
 
 /*Some in HTML preps*/
