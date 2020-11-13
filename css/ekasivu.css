@@ -2,27 +2,65 @@ body{
     margin-left: 40px;
     background-image: url("../kuvat/ekasivu_bg.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
     font-size: 20px;
-    color: black;
 }
 
 h1{
-    background-color: aquamarine;
+    background-color:rgba(0, 255, 255, 0.863);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     width: 400px;
     text-align: center;
+    color: whitesmoke;
 }
 
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 35px;
-    color: whitesmoke;
+    color: darkturquoise;
 }
 
 p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: whitesmoke;
+}
+
+@media screen and (max-width: 50rem) {
+    #snowf {
+        display: none;
+    }
+}
+
+#work-list{
+    background-color: peachpuff;
+    width: 300px;
+    border-color:white;
+    border: thick solid;
+}
+
+#snowflake {
+    background-image: url("../kuvat/snowflake.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+#snowf {
+    position: fixed;
+    background-image: url("../kuvat/snowf1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    left: 1680px;
+    top: 110px;
+    transform: rotate(20deg);
+}
+
+#decor {
+    background-image: url("../kuvat/decorat.jpg");
 }
 
 /* unvisited link */
