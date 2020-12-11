@@ -1,7 +1,8 @@
 body {
     border: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0vw;
+    margin: 0vw;
+    background-color: rgb(241, 241, 241);
 }
 
 /* HEADER */
@@ -11,21 +12,338 @@ header {
     top: 0;
     width: 100%;
     height: 5vw;
-    background-color: darkslategrey;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     z-index: 3;
 }
 
 #main_name {
+    top: 0;
     padding-left: 1.2vw;
-    font-size: 2vw;
+    height: 3vw;
+    width: 30vw;
 }
 
-.navbar a {
+#main_name h1 {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#links_somewhere a {
+    top: 0;
+    right: 0;
+    padding-top: 1vw;
     padding-right: 1.2vw;
-    float: right;
-    text-align: center;
     text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+
+
+
+/* FIRST SECTION */
+
+
+
+
+#stretcher_sec1 {
+    top: 0;
+    width: 100%;
+    height: 50.6vw;
+    /* the image */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(236, 236, 236, 0.5)), url(./Packraft_kuvat/Taitokisakuvat.jpg);
+    background-color: pink;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#logo {
+    position: relative;
+    top: 2vw;
+    left: 4vw;
+    width: 10vw;
+    height: 10vw;
+    /*the logo picture */
+    background-image: url('./Packraft_kuvat/logopackraft.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5vw;
+    background-color: white;
+}
+
+#text_on_bg {
+    /*placement*/
+    position: relative;
+    top: 0vw;
+    left: 35vw;
+    width: 25vw;
+    height: 20vw;
+    /* text going down */
+    display: flex;
+    flex-direction: column;
+}
+
+#text_on_bg p {
+    width: 12vw;
+    height: 6vw;
+    font-size: 5vw;
+    font-weight: bold;
+    padding-top: 0;
+    margin: 0;
+}
+
+
+
+/* SECOND SECTION */
+
+
+
+#stretcher_sec2 {
+    top: 0;
+    width: 100%;
+    height: 35vw;
+    display: flex;
+}
+
+#about_packraft {
+    /* placement */
+    position: relative;
+    top: 4vw;
+    left: 5.5vw;
+    /* background */
+    width: 90%;
+    height: 26vw;
+    background-color: crimson;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(236, 236, 236, 0.8)),url("./Packraft_kuvat/Taitokisakuvat-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about_packraft_text {
+    text-align: center;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+/* THIRD SECTION */
+
+
+
+#stretcher_sec3 {
+    top: 0;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+}
+
+#text_left_retki {
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 50vw;
+    height: 35vw;
+}
+
+#text_left_retki h2 {
+    position: relative;
+    padding-left: 1vw;
+    padding-top: 8vw;
+    padding-right: 2vw;
+    font-size: 2.4vw;
+}
+
+#image_right_retki {
+    /* placement */
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 45vw;
+    height: 35vw;
+    /* background */
+    background-image: url("./Packraft_kuvat/Taitokisakuvat-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8vw;
+}
+
+#image_right_retki:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("./Packraft_kuvat/Taitokisakuvat-5.jpg");
+}
+
+.media_butts {
+    position: relative;
+    top: 12vw;
+    bottom: 0vw;
+    margin-left: 2vw;
+    width: 10vw;
+    height: 4vw;
+    background-color: white;
+    color: rgb(73, 172, 73);
+    font-size: 2vw;
+    border: 0.2vw solid rgb(73, 172, 73);
+    border-radius: 5vw
+}
+
+.media_butts:hover {
+    background-color: rgb(73, 172, 73);
     color: white;
-    font-size: 1.2vw;
+}
+
+
+
+
+/* SECTION NUMERO CUATRO */
+
+
+
+#text_right_retki {
+    /* placement */
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 50vw;
+    height: 35vw;
+}
+
+#text_right_retki h2 {
+    position: relative;
+    padding-left: 1vw;
+    padding-top: 8vw;
+    font-size: 2.4vw;
+}
+
+#image_left_retki {
+    /* placement */
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 45vw;
+    height: 35vw;
+    /* background */
+    background-image: url("./Packraft_kuvat/Taitokisakuvat-15.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8vw;
+}
+
+#image_left_retki:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("./Packraft_kuvat/Taitokisakuvat-15.jpg");
+}
+
+
+
+/* FIFTHHFTH SECTION */
+
+
+
+#text_left_retki2 {
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 50vw;
+    height: 35vw;
+}
+
+#text_left_retki2 h2 {
+    position: relative;
+    padding-left: 1vw;
+    padding-top: 8vw;
+    font-size: 2.4vw;
+}
+
+#image_right_retki2 {
+    /* placement */
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 45vw;
+    height: 35vw;
+    /* background */
+    background-image: url("./Packraft_kuvat/Taitokisakuvat-12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8vw;
+}
+
+#image_right_retki2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("./Packraft_kuvat/Taitokisakuvat-12.jpg");
+}
+
+
+
+/* SIXXTHT SECTION */
+
+
+
+#text_right_retki2 {
+    /* placement */
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 50vw;
+    height: 35vw;
+}
+
+#text_right_retki2 h2 {
+    position: relative;
+    padding-left: 1vw;
+    padding-top: 8vw;
+    font-size: 2.4vw;
+}
+
+#image_left_retki2 {
+    /* placement */
+    position: relative;
+    top: 3vw;
+    left: 2vw;
+    width: 45vw;
+    height: 35vw;
+    /* background */
+    background-image: url("./Packraft_kuvat/Taitokisakuvat-7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8vw;
+}
+
+#image_left_retki2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("./Packraft_kuvat/Taitokisakuvat-7.jpg");
+}
+
+
+
+
+/* SJUU SECTION */
+
+
+
+#stretcher_sec4 {
+    /* placement */
+    top: 0;
+    width: 100%;
+    height: 55vw;
+    display: flex;
+}
+
+#container_for_fotos{
+    position: relative;
+    left: 5.5vw;
+    width: 90%;
+    height: 50vw;
+}
+
+#media_kuvat {
+    position: relative;
+    bottom: 0;
+    left: 4.5vw;
+    width: 90%;
+    height: 23vw;
+    background-color: grey;
 }
