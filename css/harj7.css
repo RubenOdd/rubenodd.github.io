@@ -24,6 +24,7 @@ p {
     padding-left: 3.5vw;
     font-size: 3.2vw;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #hanki_para {
@@ -32,6 +33,7 @@ p {
     color: white;
     font-size: 1.5vw;
     width: 78vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #welcome-sec {
@@ -41,7 +43,7 @@ p {
 }
 
 #welcome-sec-in {
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     z-index: 2;
 }
@@ -185,6 +187,7 @@ p {
     display: block;
     text-align: left;
     padding-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #frstcolumn {
@@ -199,12 +202,14 @@ p {
     padding-left: 10px;
     font-size: 1.2vw;
     text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #frstcolumn p {
     font-size: 0.8vw;
     color: white;
     padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #scndcolumn {
@@ -218,12 +223,15 @@ p {
     padding-left: 10px;
     font-size: 1.2vw;
     text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #scndcolumn p {
+    font-size: 0.8vw;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Add a background color on hover */
@@ -345,7 +353,7 @@ p {
     color:white;
 }
 
-#itsaline {
+.itsaline {
     position: relative;
     width: 90%;
     margin: 0 auto;
@@ -361,19 +369,29 @@ p {
 
 
 #stretcher_sec3 {
-    width: 100vh;
-    height: 60vh;
+    width: 100%;
+    height: 30vw;
     z-index: 2;
+}
+
+.the_article_holder{
+    width: 80vw;
+    height: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 .article_img {
+    /* placement */
     position: relative;
     top: 7vw;
     left: 8vw;
     width: 28vw;
     height: 18vw;
-    background-color: black;
+    /* background */
+    background-image: url("../kuvat/writing_in_notebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #text_on_right {
@@ -383,6 +401,155 @@ p {
     height: 30vw;
 }
 
-#text_on_right h3 {
+.h_on {
+    padding-top: 2vw;
+}
+
+.h_on h3 {
     font-size: 2vw;
+    color: #3A405A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p_on p {
+    font-size: 1vw;
+    color: #3A405A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.read_more_link{
+    padding-top: 2vw;
+}
+
+.read_more_link a{
+    color: #3A405A;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.read_more_link a:hover {
+    text-decoration: underline;
+}
+
+/* second article */
+
+#text_on_left {
+    position:relative;
+    left: 5vw;
+    width: 50vw;
+    height: 30vw;
+}
+
+#article_img {
+    /* placement */
+    position: relative;
+    top: -20vw;
+    left: 55vw;
+    width: 28vw;
+    height: 18vw;
+    /* background */
+    background-image: url("../kuvat/writing_in_notebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ============================================================================
+    FOOTER PLACEMENT AND DECORATING
+======================================================================= */
+
+#stretcher_sec4 {
+    width: 100%;
+    height: 28vw;
+    z-index: 2;
+}
+
+#footer_blue_box {
+    width: 100%;
+    height: 100%;
+    background-color: #3A405A;
+}
+
+#container_for_links {
+    position: relative;
+    left: 20vw;
+    top: 5vw;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#footer_1_column {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_2_column {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_3_column {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links_footer a {
+    padding-top: 1vw;
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F9DEC9;
+    text-decoration: none;
+}
+
+#media_pics {
+    position: relative;
+    top: 7vw;
+    left: 38vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#media_pics i {
+    margin-right: 2vw;
+}
+
+#address_puh {
+    position: relative;
+    top: 10vw;
+    left: 35vw;
+    width: 45vw;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#address_puh a {
+    padding-left: 0.5vw;
+    text-decoration: none;
+    color: #F9DEC9;
+}
+
+#copy_rights {
+    position: relative;
+    top: 13vw;
+    left: 44vw;
+    width: 45vw;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.6vw;
 }
