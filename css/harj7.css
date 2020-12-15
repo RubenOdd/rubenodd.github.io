@@ -44,7 +44,7 @@ p {
 
 #welcome-sec-in {
     width: 100%;
-    height: 100vh;
+    height: 55.5vw;
     z-index: 2;
 }
 
@@ -259,7 +259,7 @@ p {
 
 #stretcher_sec2 {
     width: 100%;
-    height: 90vh;
+    height: 50vw;
     z-index: 2;
     display: flex;
     justify-content: space-evenly;
