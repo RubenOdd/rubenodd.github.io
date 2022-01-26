@@ -79,16 +79,16 @@ a {
 }
 
 .examples-element {
-    width: 225px;
+    width: 275px;
     height: 250px;
-    background-color: #FEE440;
+    background-color: #FEF9EF;
     border-radius: 6%;
     margin: auto;
     text-align: center;
 }
 
 .example-image {
-    width: 225px;
-    height: 180px;
+    width: 275px;
+    height: 200px;
     border-radius: 6% 6% 0% 0%;
 }
