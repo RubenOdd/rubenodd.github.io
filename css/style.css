@@ -19,6 +19,10 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ---SECTIONS--- */
 /* HEADER */
 .home-first {
@@ -47,4 +51,44 @@ p {
     width: 50%;
     margin: auto;
     text-align: center;
+}
+
+/* MY WORK */
+#projects {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #FF865E;
+    display: flex;
+    flex-direction: column;
+}
+
+#projectxt-container {
+    width: 50%;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#examples-container {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.examples-element {
+    width: 225px;
+    height: 250px;
+    background-color: #FEE440;
+    border-radius: 6%;
+    margin: auto;
+    text-align: center;
+}
+
+.example-image {
+    width: 225px;
+    height: 180px;
+    border-radius: 6% 6% 0% 0%;
 }
