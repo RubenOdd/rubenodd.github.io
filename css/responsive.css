@@ -1,0 +1,24 @@
+/* Add responsivity to my protfolio */
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* Information containers */
+    .intro-text {
+        width: 90%;
+        margin: 0;
+    }
+
+    /*Projects*/
+    #projectxt-container {
+        margin-bottom: 2rem;
+    }
+}
