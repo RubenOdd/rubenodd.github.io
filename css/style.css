@@ -67,7 +67,7 @@ a {
 }
 .intro-text {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -96,7 +96,22 @@ a {
     text-align: center;
 }
 
-#examples-container {
+#game-projects {
+    width: 100%;
+    min-height: 50vh;
+    color: white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/img/bg-callout.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.examples-container {
     width: 80%;
     height: auto;
     margin: auto;
@@ -114,6 +129,8 @@ a {
     margin: auto;
     margin-bottom: 2rem;
     text-align: center;
+
+    box-shadow: 2px 2px 10px #52607a;
 }
 
 .example-image {
