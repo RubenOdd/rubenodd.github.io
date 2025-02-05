@@ -64,31 +64,63 @@ body, html {
     color: aliceblue;
 }
 
+<<<<<<< HEAD
 .hero-text h1 {
     font-size: 3em;
 }
 
 .structure {
+=======
+.structure {
     width: 100%;
-    height: 10vw;
+    min-height: 20vh;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.godly {
+>>>>>>> c40833aadcb120450158bf58054922c05783a4a6
+    width: 100%;
+    height: fit-content;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#desc {
-    width: 60%;
-    height: 100%;
-    font-family: "Smooch Sans", serif;
+.godly-container {
+    width: 100%;
+    min-height: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    font-family: "Karla", sans-serif;
     font-size: 1.5em;
     color: aliceblue;
     text-align: center;
+    margin: 0 10%;
+}
 
+.ingod {
+    width: 50%;
+}
+
+.picture {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
 
 
 
@@ -116,3 +148,57 @@ body, html {
     justify-content: center;
     align-items: center;
 }
+=======
+.picture img {
+    width: 60%;
+    height: 60%;
+    margin: 0 10%;
+    border-radius: 15px;
+}
+.picture img:hover {
+    transform: scale(1.1);
+    background-color: rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.picture h3 {
+    width: 80%;
+
+    font-family: "Karla", sans-serif;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 10%;
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 15px 15px 0 0;
+
+    display: none;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .hero {
+        height: 30vh;
+    }
+
+    .hero-text {
+        font-size: 1.2em;
+    }
+
+    .desc {
+        font-size: 1em;
+    }
+
+    .godly-container > .desc {
+        display: none;
+    }
+    .picture {
+        width: 100%;
+        flex-direction: column;
+    }
+    .picture h3 {
+        display: block;
+    }
+}
+>>>>>>> c40833aadcb120450158bf58054922c05783a4a6
