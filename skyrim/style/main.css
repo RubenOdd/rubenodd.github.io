@@ -1,0 +1,43 @@
+/* Imports of Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Yuji+Syuku&display=swap');
+/* Utilization of imported fonts
+   font-family: "Grenze Gotisch", serif;
+   font-family: "Yuji Syuku", serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: rgba(44, 52, 78, 1);
+    background-image: linear-gradient(rgba(44, 52, 78, 1), rgba(71, 29, 69, 0.5)), url("./stars-and-stuff.png");
+    background-size: 35%;
+}
+
+
+/* Hero Image on the main page */
+.hero {
+    width: 100%;
+    height: 40vh;
+    color: whitesmoke;
+    font-family: "Grenze Gotisch", serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 10px;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./skyrim-off-wall.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
