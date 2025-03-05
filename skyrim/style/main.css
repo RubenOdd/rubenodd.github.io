@@ -14,10 +14,33 @@
 
 body {
     min-height: 100vh;
+    color: whitesmoke;
 
     background-color: rgba(44, 52, 78, 1);
     background-image: linear-gradient(rgba(44, 52, 78, 1), rgba(71, 29, 69, 0.5)), url("../img/stars-and-stuff.png");
     background-size: 35%;
+}
+
+#pages_collapse {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    width: 100px;
+    height: 50px;
+    font-family: "Grenze Gotisch", serif;
+
+    background-color: rgba(20, 21, 40, 0.5);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pages_site {
+    display: none;
+    text-decoration: none;
 }
 
 
@@ -25,7 +48,6 @@ body {
 .hero {
     width: 100%;
     height: 40vh;
-    color: whitesmoke;
     font-family: "Grenze Gotisch", serif;
 
     display: flex;
@@ -41,123 +63,32 @@ body {
     background-repeat: no-repeat;
 }
 
-
-/*
-
-    Picture Carousel as taught in w3schools
-    https://www.w3schools.com/howto/howto_js_slideshow.asp
-
-*/
-
-.carousel_container {
+.infodump {
     width: 100%;
-    height: fit-content;
+    min-height: 30vh;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.texting {
+    width: 70%;
 
     font-family: "Yuji Syuku", serif;
-    color: aliceblue;
-}
-
-.carousel_container h2 {
-    padding: 10px 0;
-}
-
-/* Slideshow container */
-.carousel {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-.carousel_item {
-    width: 100%;
-    height: auto;
-
-    display: none;
-}
-
-.carousel_item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.img_caption {
-    background: rgba(0,0,0,0.7);
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.img_number {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+#footer {
+    min-height: 10vh;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+@media screen and (max-width: 600px) {
+    .infodump {
+        margin-top: 5vh;
+    }
+    .texting {
+        width: 90%;
+    }
 }
