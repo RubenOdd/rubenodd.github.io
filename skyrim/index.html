@@ -8,15 +8,32 @@
     <title>Skyrim Fan Page</title>
 </head>
 <body>
-    <div id="pages_collapse">
-        <p id="pages_toggle" onclick="toggler()">Menu</p>
-        <a id="pages_site">Gallery</a>
+    <div class="pages" id="collapse">
+        <button class="dropbutt" onclick="toggler()">Menu</button>
+
+        <div id="dropdown" class="dropdown-content">
+            <a id="first-link" href="bestiary.html">Bestiary</a>
+            <a id="last-link" href="todd.html">Todd Howard</a>
+        </div>
+
+        <script src="script/menu.js"></script>
     </div>
 
     <div class="hero">
         <h1>TES V: Skyrim is a game</h1>
         <p>Sardorbek Mukhudinov</p>
     </div>
+
+    <section class="infodump">
+        <div class="texting">
+            <p>
+                Skyrim is an old, by the standars of our time, game from 2011 by Bethesda Game Studios (Previously Bethesda Softworks). Known by many as the game that defined the genre of open world games and set a new standard on how roleplaying games are made. While some did not seem to like the game's sudden impact on the gaming world, many upon many people have got a new passion for gaming as a whole because of it. Passion for gaming, coding, art and such. The game has had a working modding community keeping it alive and fresh even after so many years.
+            </p>
+            <p>
+                While for many this might have been the introduction to The Elder Scrolls series, like myself, a lot of people have been waiting for this game since they've completed all the other games in the series beginning with Arena.
+            </p>
+        </div>
+    </section>
 
     <section class="carousel_container">
         <h2>Beauty of the Game:</h2>
@@ -55,13 +72,11 @@
     <section class="infodump">
         <div class="texting">
             <p>
-                Skyrim is an old, by the standars of our time, game from 2011 by Bethesda Softworks. Known by many as the game that defined the genre of open world games and set a new standard on how roleplaying games are made. While some did not seem to like the game's sudden impact on the gaming world, many upon many people have got a new passion for gaming as a whole because of it. Passion for gaming, coding, art and such. The game has had a working modding community keeping it alive and fresh even after so many years.
+                Through all the fame, over the years, the reputation seem to have been tainted by Bethesda. People disliked that they focused on re-releasing TES V (The Elder Scrolls V) for so many years with different editions, which added new things into the game, but still were just Skyrim. All of that, instead of developing the next game in the franchise, heavily anticipated TES VI.
             </p>
         </div>
     </section>
 
-    <section id="footer">
-
-    </section>
+    <section id="footer"></section>
 </body>
 </html>

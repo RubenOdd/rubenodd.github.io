@@ -21,26 +21,60 @@ body {
     background-size: 35%;
 }
 
-#pages_collapse {
+h1, h3 {
+    font-family: "Grenze Gotisch", serif;
+}
+
+p {
+    font-family: "Yuji Syuku", serif;
+}
+
+.pages {
     position: fixed;
     top: 3%;
     left: 3%;
-    width: 100px;
-    height: 50px;
-    font-family: "Grenze Gotisch", serif;
-
-    background-color: rgba(20, 21, 40, 0.5);
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-#pages_site {
+.dropbutt {
+    color: whitesmoke;
+    font-family: "Yuji Syuku", serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px 25px 15px 25px;
+
+    background-color: rgba(20, 21, 40, 0.9);
+    border: none;
+    border-radius: 15px;
+}
+
+.dropdown-content {
     display: none;
+    position: absolute;
+    background-color: rgba(20, 21, 40, 0.9);
+    border-radius: 15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
     text-decoration: none;
+    font-family: "Yuji Syuku", serif;
+    padding: 12px 16px;
+    display: block;
+    color: whitesmoke;
+}
+
+#first-link {
+    border-radius: 15px 15px 0px 0;
+}
+
+#last-link {
+    border-radius: 0 0 15px 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(37, 39, 68, 0.8);
 }
 
 
@@ -63,9 +97,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.hero h1 {
+    font-size: 5em;
+}
+
+/* Long text and texts on texts */
 .infodump {
     width: 100%;
     min-height: 30vh;
+    padding-bottom: 20px;
 
     display: flex;
     flex-direction: row;
@@ -74,21 +114,31 @@ body {
 }
 
 .texting {
-    width: 70%;
+    width: 50%;
 
-    font-family: "Yuji Syuku", serif;
+    font-size: larger;
     text-align: center;
 }
 
+/* Utility classes and IDs */
 #footer {
     min-height: 10vh;
 }
 
-@media screen and (max-width: 600px) {
+.show {display: block;}
+
+
+/* Responsive ahh code for mobile versions*/
+@media screen and (max-width: 680px) {
+    .hero h1 {
+        font-size: 2em;
+    }
     .infodump {
-        margin-top: 5vh;
+        margin-top: 1vh;
     }
     .texting {
         width: 90%;
+        font-size: medium;
+        text-align: left;
     }
 }
